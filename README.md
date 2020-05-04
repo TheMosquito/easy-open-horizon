@@ -10,14 +10,21 @@ Of course, this simple procedure does not cover all possible features of open-ho
 
 Before you begin, you need to collect these pieces of information:
 
-#### PATTERN_NAME (a name of your choice for your open-horizon deployment Pattern)
-#### SERVICE_NAME (a name of your choice for your open-horizon Service)
-#### SERVICE_VERSION (a version number for your open-horizon Service -- NOTE: in must be in "SemVer" format, i.e., "N.N.N", e.g., `1.0.0`)
-#### SERVICE_CONTAINER (your full container ID, i.e., "registry/repo:version" -- If your container is in DockerHub, you can omit the "registry/" prefix)
-#### CONTAINER_CREDS (your container access credentials, prefixed with "-r ", i.e., "-r registry/repo:user:token", e.g., `-r "registry.wherever.com:myid:mypw"` -- If you do not require credentials to access your container, set this to "")
-#### ARCH (the hardware architecture of your edge machines -- NOTE: this must be the open-horizon architecture, which you can get on the edge machine by running`hzn architecture`)
+#### PATTERN_NAME
+a name of your choice for your open-horizon deployment Pattern
+#### SERVICE_NAME
+a name of your choice for your open-horizon Service
+#### SERVICE_VERSION
+a version number for your open-horizon Service -- **NOTE:** in must be in "SemVer" format, i.e., "N.N.N", e.g., `1.0.0`
+#### SERVICE_CONTAINER
+your full container ID, i.e., "registry/repo:version" -- If your container is in DockerHub, you can omit the `registry/` prefix
+#### CONTAINER_CREDS
+your container access credentials, prefixed with "-r ", i.e., "-r registry/repo:user:token", e.g., `-r "registry.wherever.com:myid:mypw"` -- If you do not require credentials to access your container, set this to `""` (without the `-r ` prefix)
+#### ARCH
+the hardware architecture of your edge machines -- **NOTE:** this must be the open-horizon architecture, which you can get on the edge machine by running`hzn architecture`
 
-Also, if your `docker run ...` command has any important arguments, you will need to know those too (see step 5 below).
+#### Arguments to `docker run`
+If your `docker run ...` command has any important arguments, you will need to know those too (see step 5 below).
 
 ## How to use this stuff
 
