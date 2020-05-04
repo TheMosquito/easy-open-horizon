@@ -19,7 +19,7 @@ a version number for your open-horizon Service -- **NOTE:** in must be in "SemVe
 #### SERVICE_CONTAINER
 your full container ID, i.e., "registry/repo:version" -- If your container is in DockerHub, you can omit the `registry/` prefix
 #### CONTAINER_CREDS
-your container access credentials, prefixed with "-r ", i.e., "-r registry/repo:user:token", e.g., `-r "registry.wherever.com:myid:mypw"` -- If you do not require credentials to access your container, set this to `""` (without the `-r ` prefix)
+your container access credentials, prefixed with "-r ", i.e., "-r registry/repo:user:token", e.g., `-r "registry.wherever.com:myid:mypw"` -- If you do not require credentials to access your container, set this to an empty value (no quotes, and no `-r ` prefix)
 #### ARCH
 the hardware architecture of your edge machines -- **NOTE:** this must be the open-horizon architecture, which you can get on the edge machine by running`hzn architecture`
 
