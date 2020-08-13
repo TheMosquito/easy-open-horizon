@@ -40,11 +40,13 @@ If your `docker run ...` command has any important arguments, you will need to k
 
 6. You should not need to touch the `pattern.json` file.
 
-7. Run `make publish-service` to publish your container as an open-horizon Service
+7. Create a cryptographic code signing key pair: `hzn key create <yourcompany> <youremail>`
 
-8. Run `make publish-pattern` to publish an open-horizon deployment Pattern that includes your published Service
+8. Run `make publish-service` to publish your container as an open-horizon Service
 
-9. On any edge machines where you want this pattern deployed, run `make register-pattern`
+9. Run `make publish-pattern` to publish an open-horizon deployment Pattern that includes your published Service
+
+10. On any edge machines where you want this pattern deployed, run `make register-pattern`
 
 ## Cleaning up
 
